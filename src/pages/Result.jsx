@@ -69,7 +69,7 @@ const Result = () => {
         <p className={!loading ? "invisible text-black" : "text-black"}>Generating Image...</p>
       </div>
     </div>
-    <div className=" w-full h-32 bg-black text-white text-center text-sm p-0.5 sm:p-4 mt-4 rounded-3xl">
+    <div className=" w-full h-32 bg-black text-white text-center text-sm p-4 mt-4 rounded-3xl">
       <textarea onChange={e=> {
         setInput(e.target.value)
         setpromt_text(e.target.value)
