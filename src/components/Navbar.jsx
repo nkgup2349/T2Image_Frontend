@@ -23,8 +23,8 @@ const Navbar = () => {
                     <p className='ml-2 text-xm sm:text-sm font-medium text-black'>Credits left : {credit}</p>
                 </button>
                 <p className='text-white max-sm:hidden pl-4'>Hi , {user.name}</p>
-                <div className='relative group'>
-                    <img src={assets.profile_icon} className='w-10 drop-shadow max-sm:ml-1 border-4 border-black rounded-full' />
+                <div className='relative group max-sm:ml-2'>
+                    <img src={assets.profile_icon} className='w-10 drop-shadow max-sm:ml-0 border-4 border-black rounded-full' />
                     <div className='absolute hidden group-hover:block top-0 right-0 z-10 text-black rounded pt-12'>
                         <ul className='list-none m-0 p-2 bg-white rounded-md border text-sm'>
                             <li className='py-1  px-2 cursor-pointer pr-10'  onClick={logout}>LogOut</li>
