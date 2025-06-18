@@ -76,7 +76,7 @@ const Result = () => {
       } }
       value={input}
       type = "text"
-      className="text-wrap w-full h-full bg-transparent outline-none  max-sm:w-20 placeholder-color resize-none overflow-auto scrollbar-hide" placeholder='Describe what you want to generate' />
+      className="text-wrap w-full h-full bg-transparent outline-none placeholder-color resize-none overflow-auto scrollbar-hide" placeholder='Describe what you want to generate' />
       
     </div>
     <div className='w-full flex justify-center mt-2'>
