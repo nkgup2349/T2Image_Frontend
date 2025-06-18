@@ -30,8 +30,8 @@ const Buycredit = () => {
           if(data.success){
             toast.info("⏳ Adding Credits..Wait!", { autoClose: 500 });
             loadCreditsData()
-            toast.success("🎉 Credits Added", { autoClose: 2000 });
             navigate('/')
+            toast.success("🎉 Credits Added", { autoClose: 2000 });
           }
         } catch (error) {
           toast.error(error.message)
