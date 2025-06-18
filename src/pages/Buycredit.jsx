@@ -27,11 +27,11 @@ const Buycredit = () => {
         
         try {
           const {data} = await axios.post(backendurl+'/api/user/verifypayment', responce , {headers : {token}} )
-          toast.info("⏳ Adding Credits..Wait!", { autoClose: 100 });
+          toast.info("⏳ Adding Credits..Wait!", { autoClose: 300 });
           if(data.success){
             loadCreditsData()
             navigate('/')
-            toast.success("🎉 Credits Added", { autoClose: 1000 });
+            toast.success("🎉 Credits Added", { autoClose: 2000 });
           }
         } catch (error) {
           toast.error(error.message)
