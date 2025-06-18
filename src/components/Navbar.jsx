@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between p-5'>
       <Link to='/'>
-      <div className='flex flex-row items-center mr-3'>
+      <div className='flex flex-row items-center mr-4'>
       <img src={assets.logo} alt="" className='w-20 sm:w-32 lg:w-40'  />
       </div>
       </Link>
