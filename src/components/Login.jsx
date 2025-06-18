@@ -61,9 +61,13 @@ const Login = () => {
 
     const showloading = () => {
     if (state === 'login') {
-      toast.success("Logging in, please wait...");
+        toast.success("Logging in, please wait...", {
+        duration: 2000
+      });
     }  else {
-      toast.success("Signing up, please wait...");
+        toast.success("Signing up, please wait...", {
+        duration: 2000
+      });
     }
   };
     
