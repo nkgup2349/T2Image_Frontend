@@ -47,12 +47,12 @@ const Result = () => {
         <div  className='h-28 sm:h-16 scrollbar-hide overflow-y-auto text-sm italic text-gray-300 px-4 py-2 rounded-md whitespace-pre-wrap break-words'> {promt_text} </div>
       </div>
       
-      <a download className="bg-green-600 px-40 py-3 text-black rounded-full border-2 border-black cursor-pointer whitespace-nowrap transform transition-transform duration-300 hover:scale-105" href={image}>Download Image</a>
+      <a download className="bg-green-600 px-6 sm:px-40 py-3 text-black rounded-full border-2 border-black cursor-pointer whitespace-nowrap transform transition-transform duration-300 hover:scale-105" href={image}>Download Image</a>
       <p onClick={()=>{
         setIsImageLoaded(false)
         setImage(assets.profile_img_11)
         setInput("");
-      }} className=" border-black mt-10 border-2 text-white px-40 py-3 rounded-full cursor-pointer bg-black whitespace-nowrap transform transition-transform duration-300 hover:scale-105">Generate Another</p>
+      }} className=" border-black mt-10 border-2 text-white px-6 sm:px-40 py-3 rounded-full cursor-pointer bg-black whitespace-nowrap transform transition-transform duration-300 hover:scale-105">Generate Another</p>
      
     </div>
      
