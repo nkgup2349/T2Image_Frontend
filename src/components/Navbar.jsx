@@ -17,10 +17,10 @@ const Navbar = () => {
       <div>
         {
             user ? 
-             <div className='flex items-center gap-2 sm:gap-3'>
-                <button onClick={()=>navigate('/buy')} className=' flex items-center px-1.5 sm:px-3 py-2 sm:py-3 rounded-full hover:scale-105  transition-all duration-500 bg-green-500'>
+             <div className='flex items-center gap-2 sm:gap-5'>
+                <button onClick={()=>navigate('/buy')} className=' flex items-center text-sm px-7 py-2 sm:px-10 sm:py-3 rounded-full hover:scale-105  transition-all duration-500 bg-green-500'>
                     <img src={assets.credit_star}  className='w-4' />
-                    <p className='ml-2 text-xm sm:text-sm font-medium text-black'>Credits left : {credit}</p>
+                    <p className='ml-1 text-xm sm:text-sm font-medium text-black'>Credits left : {credit}</p>
                 </button>
                 <p className='text-white max-sm:hidden pl-4'>Hi , {user.name}</p>
                 <div className='relative group'>
