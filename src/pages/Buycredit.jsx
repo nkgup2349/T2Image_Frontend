@@ -15,8 +15,6 @@ const Buycredit = () => {
   const navigate = useNavigate();
 
   const initpay = async (order) =>{
-    console.log("start working")
-    toast.success("start working")
     const options = {
       key : import.meta.env.VITE_RAZORPAY_KEY_ID , 
       currency : order.currency,
@@ -25,28 +23,18 @@ const Buycredit = () => {
       description : "Credits Payments",
       order_id  :order.id ,  
       handler : async(responce)=>{
-        console.log('he he this is runig')
         try {
           const {data} = await axios.post(backendurl+'/api/user/verifypayment', responce , {headers : {token}} )
-          console.log(data)
           if(data.success){
-            
             loadCreditsData()
             navigate('/')
             toast.success("Credit Added")
           }
         } catch (error) {
-          toast.error("this is working");
           toast.error(error.message)
         }
       }
     }
-
-
-
-    toast.success("hello this is runnig")
-
-    
     const rzp = new window.Razorpay(options)
     rzp.open();
   }
@@ -57,10 +45,6 @@ const Buycredit = () => {
     }
     try {
       const {data} = await axios.post(backendurl+'/api/user/payment' ,{planId} , {headers:{token}} ) // jo ye header dal raha hai na vo authentication karke used_id bana ke dalne ke lie kah daal raha hai 
-      console.log(data);
-      console.log("-------------------")
-      console.log(data.success)
-      console.log(data.order)
       if(data.success){
         initpay(data.order)
       }
