@@ -61,9 +61,9 @@ const Login = () => {
 
     const showloading = () => {
     if (state === 'login') {
-        toast.success("Logging in , please wait...", { autoClose: 2000 });
+        toast.success("Logging in , please wait...", { autoClose: 1000 });
     }  else {
-        toast.success("Signing up , please wait...", { autoClose: 2000 });
+        toast.success("Signing up , please wait...", { autoClose: 1000 });
     }
   };
     
