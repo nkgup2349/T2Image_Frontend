@@ -24,10 +24,11 @@ const Buycredit = () => {
       order_id  :order.id ,  
       handler : async(responce)=>{
         toast.success("Payment Successful", { autoClose: 500 });
-        
+        setTimeout(() => {
+           toast.info("⏳ Adding Credits..Wait!", { autoClose: 400 });
+        }, 400); // show after 1 secon
         try {
           const {data} = await axios.post(backendurl+'/api/user/verifypayment', responce , {headers : {token}} )
-          toast.info("⏳ Adding Credits..Wait!", { autoClose: 300 });
           if(data.success){
             loadCreditsData()
             navigate('/')
