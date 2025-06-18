@@ -15,6 +15,7 @@ const Buycredit = () => {
   const navigate = useNavigate();
 
   const initpay = async (order) =>{
+    toast.success("Adding your credits")
     const options = {
       key : import.meta.env.VITE_RAZORPAY_KEY_ID , 
       currency : order.currency,
