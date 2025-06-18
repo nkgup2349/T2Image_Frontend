@@ -58,6 +58,14 @@ const Login = () => {
       document.body.style.overflow = "unset";
     };
   }, []);
+
+    const showloading = () => {
+    if (state === 'login') {
+      toast.success("Logging in, please wait...");
+    }  else {
+      toast.success("Signing up, please wait...");
+    }
+  };
     
   return (
     <div className="fixed left-0 top-0 bottom-0 right-0 z-10 backdrop-blur-sm bg-black/45 flex justify-center items-center">
@@ -86,7 +94,7 @@ const Login = () => {
         <p className="text-sm text-green-600 my-4 cursor-pointer">
           Forgot password?
         </p>
-        <button className="bg-green-600 w-full text-white py-2 rounded-full">
+        <button onClick={()=>{showloading()}} className="bg-green-600 w-full text-white py-2 rounded-full">
           {state === "login" ? "Login" : "Create Account"}
         </button>
 
