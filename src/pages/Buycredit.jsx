@@ -23,10 +23,11 @@ const Buycredit = () => {
       description : "Credits Payments",
       order_id  :order.id ,  
       handler : async(responce)=>{
+        toast.success("✅ Payment Successful");
+        toast.info("⏳ Adding Credits...");
         try {
           const {data} = await axios.post(backendurl+'/api/user/verifypayment', responce , {headers : {token}} )
           if(data.success){
-            toast.success("Adding your credits")
             loadCreditsData()
             navigate('/')
             toast.success("Credit Added")
