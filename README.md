@@ -1,10 +1,11 @@
-#### Backend file this Project -> 
-
-> https://github.com/nkgup2349/T2Image_backend
 
 # T2Image - Text to Image Generator
 
 T2Image is a full-stack web application that generates images from text prompts using the **ClipDrop API**. Built with the **MERN stack** and **Vite + React**, it also includes a credit system powered by **Razorpay**, where each image generation costs 1 credit.
+
+## 🔗 Backend Repository
+
+👉 [T2Image Backend](https://github.com/nkgup2349/T2Image_backend)
 
 ## ✨ Features
 
