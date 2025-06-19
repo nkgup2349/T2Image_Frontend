@@ -1,12 +1,49 @@
-# React + Vite
+# T2Image - Text to Image Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+T2Image is a full-stack web application that generates images from text prompts using the **ClipDrop API**. Built with the **MERN stack** and **Vite + React**, it also includes a credit system powered by **Razorpay**, where each image generation costs 1 credit.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔤 Generate images from text prompts (ClipDrop API)
+- ♻️ Regenerate or download images
+- 💳 Razorpay integration to buy credits
+- 💰 1 credit deducted per image generation
+- 📱 Fully responsive UI with smooth UX
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+- **Frontend**: React.js, Vite, Tailwind CSS, Axios
+- **Backend**: Node.js, Express.js, MongoDB
+- **API**: ClipDrop Image Generation API
+- **Payments**: Razorpay (for credits)
+
+## 🛠️ Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/nkgup2349/T2Image_Frontend.git
+cd T2Image_Frontend
+
+```
+
+
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+### 3. Add Environment Variables
+Create a .env file in the root and add
+```
+VITE_CLIPDROP_API_KEY=your_clipdrop_api_key
+VITE_BACKEND_URL=http://localhost:5000
+```
+(Also make sure your backend has proper Razorpay and MongoDB setup)
+
+4. Run the App
+
+```
+npm run dev
+
+```
