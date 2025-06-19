@@ -1,6 +1,6 @@
-#### Backend for this is -> 
+#### Backend file this Project -> 
 
->> https://github.com/nkgup2349/T2Image_backend
+> https://github.com/nkgup2349/T2Image_backend
 
 # T2Image - Text to Image Generator
 
